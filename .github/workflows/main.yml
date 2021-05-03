@@ -8,8 +8,8 @@ jobs:
       - name: Kaniko build
         uses: aevea/action-kaniko@master
         with:
-          image: dopsdemo/kaniko
-          tag: v11
+          image: dopsdemo/vote
+          tag: latest
           path: ./vote
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
