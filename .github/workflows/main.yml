@@ -1,7 +1,7 @@
-name: Docker build
+name: Image Build and Publish
 on: push
 jobs:
-  docker:
+  image-build-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
